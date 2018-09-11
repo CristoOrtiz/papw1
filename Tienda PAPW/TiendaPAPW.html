@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="StyleSheet" href="TiendaPAPW.css">
+    <title>Vaporcito</title>
+</head>
+<body>
+    <h1>Vaporcito</h1>
+    <div class="login">
+        <input type="text" placeholder="Usuario"><br>
+        <input type="password" placeholder="Contraseña"><br>
+        <input type="submit" value="Login" id="loginbtn">
+        <a href="Registrar.html"><button class="registerbtn">Registrarse</button></a>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Juegos</button>
+        <div class="dropdown-content">
+            <a href="#"> Link 1</a><br>
+            <a href="#"> Link 2</a><br>
+            <a href="#"> Link 3</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Ofertas</button>
+        <div class="dropdown-content">
+            <a href="#"> Link 4</a><br>
+            <a href="#"> Link 5</a><br>
+            <a href="#"> Link 6</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Novedades</button>
+        <div class="dropdown-content">
+            <a href="#"> Link 7</a><br>
+            <a href="#"> Link 8</a><br>
+            <a href="#"> Link 9</a><br>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Perfil</button>
+        <div class="dropdown-content">
+            <a href="#"> Link 10</a><br>
+            <a href="#"> Link 11</a><br>
+            <a href="#"> Link 12</a>
+        </div>
+    </div>
+
+    <div class="seccionup">
+        <div class="categorias">
+            <ul>Géneros
+                <li><button class="categoriabtn">Terror</button></li>
+                <li><button class="categoriabtn">Suspeno</button></li>
+                <li><button class="categoriabtn">Disparos</button></li>
+                <li><button class="categoriabtn">RPG</button></li>
+                <li><button class="categoriabtn">MMORPG</button></li>
+                <li><button class="categoriabtn">Aventura</button></li>
+                <li><button class="categoriabtn">Plataformas</button></li>
+            </ul>
+            <ul>Clasifación
+                <li><button class="categoriabtn">Everyone</button></li>
+                <li><button class="categoriabtn">6+</button></li>
+                <li><button class="categoriabtn">12+</button></li>
+                <li><button class="categoriabtn">15+</button></li>
+                <li><button class="categoriabtn">18+</button></li>
+                <li><button class="categoriabtn">Pendiente</button></li>
+            </ul>
+        </div>
+        <div class="productos">
+            <img src="link.jpg" class="imgprueba">
+            <img src="lonk.jpg" class="imgprueba">
+            <img src="lenk.jpg" class="imgprueba">
+        </div>
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("imgprueba");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+        }   
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1} 
+            x[slideIndex-1].style.display = "block"; 
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+    }            
+    </script>
+</body>
+</html>

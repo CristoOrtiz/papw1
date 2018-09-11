@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(39, 39, 39)
+}
+
+h1 {
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.dropbtn{
+    background-color: rgb(39, 39, 39);
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    border: navy;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 8px 0px rgba(0,0,0,0,2);
+    z-index: 1;
+}
+
+.login{
+    text-align: right;
+}
+
+#loginbtn{
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    font-size: 15px;
+    box-align: right;
+}
+
+.registerbtn{
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    font-size: 15px;
+    box-align: right;
+}
+
+.categorias{
+    float: left;
+    background-color: transparent;
+    color: white;
+    border: white;
+}
+
+.categoriabtn{
+    background-color: transparent;
+    color: white;
+    border: white;
+}
+
+.class{
+    margin: right;
+}
+
+.productos{
+    height: 100%;
+    width: auto;
+}
+
+.imgprueba{
+    height: 40%;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dropdown-content a:hover{background-color: blueviolet;}
+
+.dropdown:hover .dropdown-content{display: block;}
+
+.dropdown:hover .dropbtn{background-color: rgb(34, 67, 80);}

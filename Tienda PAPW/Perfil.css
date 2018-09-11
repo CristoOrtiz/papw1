@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(17, 19, 20)
+}
+
+h1{
+    color: white;
+}
+
+.comentarios{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200%;
+    height: 150%;
+}
+
+.imagenperfil{
+    height: 20%;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
